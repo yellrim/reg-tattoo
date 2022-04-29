@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+/* HANDPOKE */
+.doann01,.doann02,.doann03,.doann04,
+.doann05,.doann06,.doann07,.doann08{
+    width: 400px;
+    margin: 0px auto;
+    position: relative;
+}
+.do01,.do02,.do03,.do04,.do05,.do06,.do07,.do08 {
+    width: 400px;
+    margin: 0px auto;
+}
+.do-s01,.do-s02,.do-s03,.do-s04,
+.do-s05,.do-s06,.do-s07,.do-s08 {
+    background-color: #fff;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    transition: opacity 0.5s linear;
+}
+.doann01:hover .do-s01,.doann02:hover .do-s02,
+.doann03:hover .do-s03,.doann04:hover .do-s04,
+.doann05:hover .do-s05,.doann06:hover .do-s06,
+.doann07:hover .do-s07,.doann08:hover .do-s08 {
+    display: block;
+    opacity: 1;
+}
