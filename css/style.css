@@ -1,38 +1,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
 :root{
     font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
 }
 img {
     max-width: 100%;
 }
+.wrap{
+    margin: 25px;
+}
+/* header */
+.header .container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/main.jpg);
+}
+.header .row{
+    position: relative;
+    height: 100vh;
+}
+.header .row h1{
+    position: absolute;
+    left: 22%;
+    top: 40%;
+    font-family: 'Oleo Script', cursive;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+.header .row span{
+    display: inline;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #8c8c8c;
+}
+.nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-right: 50px;
+    position:absolute;
+    left: 12%;
+    top: 60%;
+
+}
+.nav ul li{
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #c7c7c7;
+}
+
+
+
+
+
+
 
 /* HANDPOKE */
-.doann01,.doann02,.doann03,.doann04,
-.doann05,.doann06,.doann07,.doann08{
-    width: 400px;
-    margin: 0px auto;
+.handpoke h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px;
+    margin: 100px 0;
+    color: #8c8c8c;
+}
+.handpoke .row{
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sec01,.sec02{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.doann{
+    width: 300px;
+    margin: 50px;
     position: relative;
 }
-.do01,.do02,.do03,.do04,.do05,.do06,.do07,.do08 {
-    width: 400px;
+.doann button{
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    width: 110px;
+    height: 30px;
+    background-color: inherit;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+.doann button:hover{
+    color: #8c8c8c;
+}
+.do-img {
+    width: 300px;
+    height: 300px;
     margin: 0px auto;
 }
-.do-s01,.do-s02,.do-s03,.do-s04,
-.do-s05,.do-s06,.do-s07,.do-s08 {
-    background-color: #fff;
-    width: 400px;
-    height: auto;
+.do-s {
+    width: 300px;
+    height: 300px;
     position: absolute;
-    top: 0px;
     left: 0px;
-    display: none;
-    transition: opacity 0.5s linear;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
 }
-.doann01:hover .do-s01,.doann02:hover .do-s02,
-.doann03:hover .do-s03,.doann04:hover .do-s04,
-.doann05:hover .do-s05,.doann06:hover .do-s06,
-.doann07:hover .do-s07,.doann08:hover .do-s08 {
-    display: block;
+.doann:hover .do-s {
     opacity: 1;
+    transition: 0.3s;
+}
+
+/* notice */
+.notice .row h2{
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px;
+    color: #8c8c8c;
+}
+.notice .row h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.notice .row{
+    margin: 150px;
+}
+.notice-top{
+    text-align: center;
+}
+.notice-top hr{
+    margin: 20px;
+}
+.notice .row span{
+    display: inline;
+}
+.bt:hover span{
+    color: rgb(236, 195, 104);
+}
+.bt{
+    margin: 60px;
+}
+.bt p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    color: #8c8c8c;
+}
+
+.footer{
+    background-image: url(../img/main.jpg);
+}
+.footer h3{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer p{
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.footer .sns{
+    font-size: 28px;
+    text-align: center;
 }
