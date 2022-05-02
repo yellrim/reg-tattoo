@@ -53,12 +53,9 @@ img {
     font-weight: 500;
     color: #c7c7c7;
 }
-
-
-
-
-
-
+.btn-mb{
+    display: none;
+}
 
 /* HANDPOKE */
 .handpoke h2{
@@ -207,4 +204,53 @@ img {
     background-color: rgba(0,0,0,0);
     border: 1px solid #c7c7c7;
     color: #c7c7c7;
+}
+
+
+/* 반응형 */
+
+@media (max-width:360px) {
+    .wrap{
+        margin: 0px;
+    }
+    .header .container{
+        background-image: url(../img/main-mb.jpg);
+        background-repeat: no-repeat;
+        height: 440px;
+    }
+    .header .row h1{
+        left: 30%;
+        top: 2%;
+        font-size: 60px;
+    }
+    .nav ul{
+        display: none;
+    }
+    .mb-nav{
+        text-align: right;
+        font-size: 25px;
+        padding: 5px 15px 0 0;
+        color: #c7c7c7;
+        cursor: pointer;
+    }
+    .btn-mb{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.8);
+        color: #c7c7c7;
+        font-size: 38px;
+        width: 100%;
+        height: 100vh;
+    }
+    .btn-mb ul{
+        padding: 100px;
+    }
+    .btn-mb li{
+        line-height: 2em;
+        text-align: center;
+    }
+
 }
