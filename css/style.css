@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
@@ -53,7 +55,7 @@ img {
     font-weight: 500;
     color: #c7c7c7;
 }
-.btn-mb{
+.mb-nav{
     display: none;
 }
 
@@ -68,7 +70,7 @@ img {
     color: #8c8c8c;
 }
 .handpoke .row{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -208,49 +210,93 @@ img {
 
 
 /* 반응형 */
-
-@media (max-width:360px) {
-    .wrap{
-        margin: 0px;
-    }
+@media (max-width:1200px){
     .header .container{
-        background-image: url(../img/main-mb.jpg);
+        background-image: url(../img/main-dt.jpg);
         background-repeat: no-repeat;
-        height: 440px;
+        height: 100vh;
     }
-    .header .row h1{
-        left: 30%;
-        top: 2%;
-        font-size: 60px;
+    .sec01,.sec02{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 50%;
+    }
+    .bt{
+        margin:60px 10px;
+    }
+}
+
+@media (max-width:747px) {
+    .header .container{
+        background-image: url(../img/main-tb.jpg);
     }
     .nav ul{
         display: none;
     }
     .mb-nav{
+        display: block;
         text-align: right;
         font-size: 25px;
         padding: 5px 15px 0 0;
         color: #c7c7c7;
         cursor: pointer;
     }
-    .btn-mb{
+    .fa-bars{
+        position: fixed;
+        right: 7%;
+        top: 4%;
+    }
+    #btn-mb{
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         justify-content: center;
         background-color: rgba(0,0,0,0.8);
         color: #c7c7c7;
         font-size: 38px;
-        width: 100%;
-        height: 100vh;
     }
-    .btn-mb ul{
+    #btn-mb ul{
         padding: 100px;
     }
-    .btn-mb li{
+    #btn-mb li{
         line-height: 2em;
         text-align: center;
     }
+    #btn-close{
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: -2%;
+        font-size: 50px;
+        color: #c7c7c7;
+        cursor: pointer;
+    }
+    .handpoke h2{
+        margin: 0;
+    }
+    .doann{
+        margin: 10px;
+    }
+    .sec01,.sec02{
+        width: 100%;
+    }
+    .notice .row{
+        margin: 0px;
+    }
+}
 
+@media (max-width:360px) {
+    .wrap{
+        margin: 0;
+    }
+    .header .container{
+        background-image: url(../img/main-mb.jpg);
+    }
+    .notice .row{
+        margin:5px;
+    }
 }

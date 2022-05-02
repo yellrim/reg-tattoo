@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <!-- 스타일 -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -26,16 +26,17 @@
                             <li><a href="#notice">NOTICE</a></li>
                         </ul>
                     </nav>
-                    <nav class="mb-nav" onclick="btnMb()">
-                        <i class="fas fa-bars"></i>
-                        <div class="btn-mb">
-                            <ul>
+                    <nav class="mb-nav">
+                        <i class="fas fa-bars" onclick="btnMb()"></i>
+                        <div id="btn-mb">
+                            <ul onclick="navClose()">
                                 <li><a href="#reg-pork">REGPORK</a></li>
                                 <li><a href="#handpoke">HANDPOKE</a></li>
                                 <li><a href="#notice">NOTICE</a></li>
                             </ul>
                         </div>
                     </nav>
+                    <div id="btn-close" onclick="btnClose()">-</div>
                 </div>
             </div>
         </header>
@@ -192,10 +193,6 @@
         <a id="top-btn" href="#">TOP</a>
     </div>
 
-    <script>
-        function btnMb(){
-            document.getElementsByClassName('btn-mb').style.disply = 'flex';
-        }
-    </script>
+    <script src="./js/nav.js"></script>
 </body>
 </html>
