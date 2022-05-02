@@ -159,7 +159,19 @@ img {
     padding: 10px;
     color: #8c8c8c;
 }
+.btn-kakao{
+    background-color: #fff;
+    border: none;
+    font-weight: 900;
 
+    cursor: pointer;
+    color: #8c8c8c;
+}
+.btn-kakao:hover{
+    color: #333;
+}
+
+/* footer */
 .footer{
     background-image: url(../img/main.jpg);
 }
@@ -177,4 +189,22 @@ img {
 .footer .sns{
     font-size: 28px;
     text-align: center;
+}
+
+/* top */
+#top-btn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 5%;
+    right: 5%;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #c7c7c7;
+    color: #c7c7c7;
 }
