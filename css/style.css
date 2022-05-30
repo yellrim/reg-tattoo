@@ -229,7 +229,7 @@ img {
 
 @media (max-width:747px) {
     .header .container{
-        background: url(../img/main-tb.jpg) no-repeat -140px -15px
+        background: url(../img/main-dt.jpg) no-repeat -140px -15px
     }
     .nav ul{
         display: none;
@@ -245,7 +245,7 @@ img {
     .fa-bars{
         position: fixed;
         right: 6%;
-        top: 2%;
+        top: 3%;
     }
     #btn-mb{
         display: none;
